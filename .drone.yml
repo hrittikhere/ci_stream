@@ -18,7 +18,7 @@ steps:
   image: plugins/docker
   settings:
     # registry: docker.io
-    repo: hrittikhere/test
+    repo: hrittik/test
     username:
       from_secret: docker_username
     password:
