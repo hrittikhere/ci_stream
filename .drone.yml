@@ -2,6 +2,10 @@ kind: pipeline
 type: docker
 name: default
 
+workspace:
+  base: /go
+  path: src/github.com/hrittikhere/ci_stream/main
+
 steps:
 - name: test
   image: golang
@@ -10,3 +14,4 @@ steps:
   - go get
   - go test
 
+  
